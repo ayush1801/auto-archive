@@ -1,0 +1,7 @@
+plugins:
+  aa_auto_archived_enabled:
+    default: false
+  aa_archive_older_than_day:
+    default: 175
+  aa_archive_day:
+    default: 225

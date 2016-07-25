@@ -1,0 +1,5 @@
+en:
+  site_settings:
+      aa_auto_archived_enabled: "Enable auto archiving"
+      aa_archive_older_than_day: "Day of current year to archive topics older than"
+      aa_archive_day: "Day of current year to initiate the archiving on"
