@@ -1,7 +1,7 @@
 module Jobs
 
   class Archive < ::Jobs::Scheduled
-    every 4.months
+    every 1.day
 
     def execute(args)
       Logster.logger.info "executing AutoArchive"
