@@ -1,0 +1,12 @@
+Normal plugin in install instructions
+
+What it does:  Once a year topics from  `aa_archive_older_than_day` get marked as archived on `aa_archive_day`.
+Topics can be unmarked as archived and will stay that way for the next year
+
+Settings
+aa_auto_archived_enabled: "Enable auto archiving"    Default: false
+aa_archive_older_than_day: "Day of current year to archive topics older than"  Default: 175
+aa_archive_day: "Day of current year to initiate the archiving on" Default: 225
+
+The days are in the form of days since the start of the year (i.e. Jan 25th would be day 25)
+
