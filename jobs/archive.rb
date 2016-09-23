@@ -19,11 +19,10 @@ module Jobs
         user = User.find_by_username('system')
         #find the topics to close.
         #do them in batches for memory performance
-        Topic.created_before(older_than).in_batches do |t|
-          topics.each do |t|
-             t.update_status('archived', true, user)
+        Topic.created_before(older_than).find_each do |t|
+            #puts "that was created #{t.created_at} going to archive #{t.title} "
+          t.update_status('archived', true, user)
           end
-        end
       end
     end
   end
